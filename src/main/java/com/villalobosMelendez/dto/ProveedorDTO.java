@@ -19,7 +19,8 @@ public class ProveedorDTO {
     private String nombre;
 
     @NotNull
-    @Size(min = 1, max = 50)
+    @Size(min = 1, max = 11, message = "El RUC debe tener entre 1 y 11 caracteres")
+    @Pattern(regexp = "\\d{11}", message = "El RUC debe contener solo números")
     private String ruc;
 
     @NotNull

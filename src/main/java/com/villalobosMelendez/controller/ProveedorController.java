@@ -1,6 +1,7 @@
 package com.villalobosMelendez.controller;
 
 
+import com.villalobosMelendez.dto.ProductoDTO;
 import com.villalobosMelendez.dto.ProveedorDTO;
 import com.villalobosMelendez.model.Proveedor;
 import com.villalobosMelendez.service.IProveedorService;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,6 +26,10 @@ import java.util.Map;
 @RequestMapping("/proveedores")
 @RequiredArgsConstructor
 public class ProveedorController {
+
+
+
+
 
     private final IProveedorService service;
     private final ModelMapper modelMapper;
